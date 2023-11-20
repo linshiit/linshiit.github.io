@@ -1,0 +1,283 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>谷歌相机（拍照利器） | Cool的机网</title><meta name="keywords" content="玩机技巧 Android"><meta name="author" content="Cool的机网"><meta name="copyright" content="Cool的机网"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="谷歌相机开发者：谷歌公司AGC谷歌相机移植版开发者：bigkaka大佬配置制作者：ちん 我发现很多人推荐一些人新手去看其它人写的教程，教程上提供的安装包是官方的然后用的我的配置文件结果界面显示或是模式都跟我的不一样，他们又来反馈。。hey，那我寄几写一个面向使用我的配置的用户的安装教程以及专用库的导入教程(新手教程)。 1.首先你需要从我的置顶帖 https:&#x2F;&#x2F;www.coolapk.com&#x2F;f">
+<meta property="og:type" content="article">
+<meta property="og:title" content="谷歌相机（拍照利器）">
+<meta property="og:url" content="https://linhao2023.github.io/blog/%E8%B0%B7%E6%AD%8C%E7%9B%B8%E6%9C%BA%EF%BC%88%E6%8B%8D%E7%85%A7%E5%88%A9%E5%99%A8%EF%BC%89/index.html">
+<meta property="og:site_name" content="Cool的机网">
+<meta property="og:description" content="谷歌相机开发者：谷歌公司AGC谷歌相机移植版开发者：bigkaka大佬配置制作者：ちん 我发现很多人推荐一些人新手去看其它人写的教程，教程上提供的安装包是官方的然后用的我的配置文件结果界面显示或是模式都跟我的不一样，他们又来反馈。。hey，那我寄几写一个面向使用我的配置的用户的安装教程以及专用库的导入教程(新手教程)。 1.首先你需要从我的置顶帖 https:&#x2F;&#x2F;www.coolapk.com&#x2F;f">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://img.itmop.com/upload/2021-1/20211221558482343.jpg">
+<meta property="article:published_time" content="2023-11-17T07:50:05.000Z">
+<meta property="article:modified_time" content="2023-11-17T08:14:43.002Z">
+<meta property="article:author" content="Cool的机网">
+<meta property="article:tag" content="玩机技巧 Android">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://img.itmop.com/upload/2021-1/20211221558482343.jpg"><link rel="shortcut icon" href="/media/favicon.png"><link rel="canonical" href="https://linhao2023.github.io/blog/%E8%B0%B7%E6%AD%8C%E7%9B%B8%E6%9C%BA%EF%BC%88%E6%8B%8D%E7%85%A7%E5%88%A9%E5%99%A8%EF%BC%89/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?true";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":30,"position":"top","messagePrev":"It has been","messageNext":"自上次更新以来的几天，文章的内容可能已经过时。"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '谷歌相机（拍照利器）',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-11-17 16:14:43'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    document.addEventListener('pjax:complete', detectApple)})(window)</script><script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script><script type="text/javascript" src ="/js/welcome.js" ></script><script src="/js/sweetalert.js"></script><link rel="stylesheet" href="/css/sweetalert.css"><script> var _hmt = _hmt || []; (function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?2ed272218b038a83e0b7b76159d49068"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })(); </script><meta name="google-adsense-account" content="ca-pub-9862421207849025"><meta name="generator" content="Hexo 5.2.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/media/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 产品</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://github.com/Suni-code/Tritium/releases"><span> CT调度工具</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.canva.cn/design/DAFz2q5IHpM/kzI6BqhIwUMQFEF88ww-iQ/edit"><span> 林浩Win PE</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 系列文章</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E4%BB%8A%E6%97%A5%E8%AF%9D%E9%A2%98/"><span> 今日话题</span></a></li><li><a class="site-page child" href="/categories/%E6%89%8B%E6%9C%BA%E6%B5%8B%E8%AF%84/"><span> 手机评测</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/blog/%E5%8D%9A%E4%B8%BB%E6%8B%9B%E5%8B%9F%EF%BC%81/"><span> 入驻申请</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://wj.qq.com/s2/13038158/e19e/"><span> 广告投放</span></a></div><div class="menus_item"><a class="site-page" href="/diaocha/"><span> 版本调查</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 传送门</span></a></div><div class="menus_item"><a class="site-page" href="/about/about/index"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: black"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Cool的机网</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 产品</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://github.com/Suni-code/Tritium/releases"><span> CT调度工具</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.canva.cn/design/DAFz2q5IHpM/kzI6BqhIwUMQFEF88ww-iQ/edit"><span> 林浩Win PE</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 系列文章</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E4%BB%8A%E6%97%A5%E8%AF%9D%E9%A2%98/"><span> 今日话题</span></a></li><li><a class="site-page child" href="/categories/%E6%89%8B%E6%9C%BA%E6%B5%8B%E8%AF%84/"><span> 手机评测</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/blog/%E5%8D%9A%E4%B8%BB%E6%8B%9B%E5%8B%9F%EF%BC%81/"><span> 入驻申请</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://wj.qq.com/s2/13038158/e19e/"><span> 广告投放</span></a></div><div class="menus_item"><a class="site-page" href="/diaocha/"><span> 版本调查</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 传送门</span></a></div><div class="menus_item"><a class="site-page" href="/about/about/index"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">谷歌相机（拍照利器）</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-11-17T07:50:05.000Z" title="发表于 2023-11-17 15:50:05">2023-11-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-11-17T08:14:43.002Z" title="更新于 2023-11-17 16:14:43">2023-11-17</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%8E%A9%E6%9C%BA%E6%8A%80%E5%B7%A7/">玩机技巧</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>谷歌相机开发者：谷歌公司<br>AGC谷歌相机移植版开发者：bigkaka大佬<br>配置制作者：ちん</p>
+<p>我发现很多人推荐一些人新手去看其它人写的教程，教程上提供的安装包是官方的然后用的我的配置文件结果界面显示或是模式都跟我的不一样，他们又来反馈。。<br>hey，那我寄几写一个面向使用我的配置的用户的安装教程以及专用库的导入教程(新手教程)。</p>
+<p>1.首先你需要从我的置顶帖 <a target="_blank" rel="noopener" href="https://www.coolapk.com/feed/33799523?shareKey=NjY4NmMxOTJmYTA1NjU1NzFjNjY~&amp;shareUid=24951794&amp;shareFrom=com.coolapk.market_13.3.6">https://www.coolapk.com/feed/33799523?shareKey=NjY4NmMxOTJmYTA1NjU1NzFjNjY~&amp;shareUid=24951794&amp;shareFrom=com.coolapk.market_13.3.6</a> 找到下载链接，这是我提供的唯一链接。我只提供百度盘。(之前提供过Gdrive但不想透露自己的Google账号也木有其它盘所以不喜欢百度的话请忍忍。。) </p>
+<p>2️⃣网盘文件目录有<br>1，配置文件(CRFV)，可以直接导入配置文件使用，也可以配合专用库文件。专用库的作用是锐化更少，降噪涂抹更少，细节解析力更好更细腻。锐化涂抹程度多少根据你选择的库不同而变化。最好都试试看自己喜欢哪种。<br>2，安装包(一定要用我网盘里的安装包，这是我基于agc官方版的修改)<br><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="1.jpg" alt=""></p>
+<p>如文字所述一般机型下载通用安装包，联发科，oppo，一加机型下载各自的安装包。OPPO安装包根抖音包名冲突，所以有长焦的OPPO机型你需要卸载抖音或者使用极速版抖音或者改抖音的包名使他们共存。<br>3️⃣配置导入教程<br>下载你机型的对应配置文件，没有专用就用通用。<br><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="2.jpg" alt=""></p>
+<p>安装完相机以后先打开app、他会自动在/Download文件夹生成AGC8.4文件夹，你需要在这个文件夹下新建一个Configs文件夹然后把下载的配置文件放进去<br><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="3.jpg" alt=""></p>
+<p>这时候你再进入相机app，下拉出现后点击[ 加载配置 ]后就可以看到刚刚的配置文件。然后点击加载就完成了。<br><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="4.jpg" alt=""></p>
+<p>然后你就可以开心地使用了(其实也可以在 更多设置-＞配置-＞导入配置后加载，有些机型好像无法成功导入所以通过新建目录手动放入配置) </p>
+<p>4️⃣专用库导入教程<br><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="5.jpg" alt=""></p>
+<p>除了配置文件以外你还需要下载一般机型专用库，联发科猎户座或者拍照黑片问题的机子需要用另一个专用库文件夹里的。<br>各个库文件区别到这篇文章看。<br><a target="_blank" rel="noopener" href="https://www.coolapk.com/feed/42856229?shareKey=NjUwY2I3MzJjYzFjNjU1NzFkOWE~&amp;shareUid=24951794&amp;shareFrom=com.coolapk.market_13.3.6">https://www.coolapk.com/feed/42856229?shareKey=NjUwY2I3MzJjYzFjNjU1NzFkOWE~&amp;shareUid=24951794&amp;shareFrom=com.coolapk.market_13.3.6</a><br>先导入库还是配置都可以(有反馈导入库后闪退的情况那你可尝试先导库后再加载配置，再切换库大概率没问题)，还有经常出现一切换库就闪退的原因是下载的不完整(0kb等)<br><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="6.jpg" alt=""></p>
+<p>加载配置后按照下图步骤导入并切换库文件，库文件放在哪个目录都可以你只要找到加载就可以。<br>拍照界面下拉点击[ 更多设置 ]-＞[ 自定义库 ]-＞[ 将第三方库导入到谷歌相机 ] -＞找到库加载后切换即可。<br><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="7.jpg" alt=""></p>
+<p>5，点开app后闪退的机型如何加载配置。<br>长按桌面图标进入视频录制后下拉加载防闪退配置(通用机型)。包括小米13，x90pro+，s23系列默认状态会黑屏，导入各自的专用配置就不会有黑屏闪退等问题。</p>
+<p>6，刚刚相机如何不转圈拍摄/连拍。<br>下拉切换到中间的hdr+即可，但是仅建议光线好的情况使用。其它情况推荐默认的转圈圈hdr增强模式，可以获得更好的动态范围，更细腻的细节以及更好的降噪效果。<br>(注意千万不能关闭hdr。) </p>
+<p>完</p>
+<p>【作者的话：🥰谷歌相机12合一模式说明书在这里，非常推荐新人看看哦。<a target="_blank" rel="noopener" href="https://www.coolapk.com/feed/38003563?shareKey=N2YwMzk4MTA3YWI4NjU1NzFkOTQ~&amp;shareUid=24951794&amp;shareFrom=com.coolapk.market_13.3.6】">https://www.coolapk.com/feed/38003563?shareKey=N2YwMzk4MTA3YWI4NjU1NzFkOTQ~&amp;shareUid=24951794&amp;shareFrom=com.coolapk.market_13.3.6】</a></p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%8E%A9%E6%9C%BA%E6%8A%80%E5%B7%A7-Android/">玩机技巧 Android</a></div><div class="post_share"><div class="social-share" data-image="http://img.itmop.com/upload/2021-1/20211221558482343.jpg" data-sites="wechat,weibo,qq,facebook,weibo,twitter"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/media/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/media/wechat.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/blog/%E6%B5%8B%E8%AF%84/"><img class="prev-cover" src="https://ms.bdimg.com/pacific/0/pic/270417707_1124014918.jpg?x=0&amp;y=0&amp;vh=340.00&amp;vw=510.00&amp;oh=340.00&amp;ow=510.00&amp;w=146&amp;h=91&amp;rs=0" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">vivo X100 评测</div></div></a></div><div class="next-post pull-right"><a href="/blog/done/"><img class="next-cover" src="https://tse3-mm.cn.bing.net/th/id/OIP-C.qiKcgXAvh4pHyaAUp8ivQQHaEK?w=269&amp;h=180&amp;c=7&amp;r=0&amp;o=5&amp;pid=1.7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">把Windows装进U盘？即插即用，小白都会的win to go教程！</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/blog/Ct调度使用指南/" title="安卓手机性能救星（Ct调度）"><img class="cover" src="https://tse4-mm.cn.bing.net/th/id/OIP-C.RJrJXxtFbNXNawJi4LhO-QHaFj?w=254&h=190&c=7&r=0&o=5&pid=1.7" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-11-20</div><div class="title">安卓手机性能救星（Ct调度）</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/media/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Cool的机网</div><div class="author-info__description">科技，数码，搞机</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://qm.qq.com/q/kVgz6BTYiW"><i class="fab fa-qq"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:cool@linshiit.link" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://weibo.com/u/7848215482" target="_blank" title="weibo"><i class="fab fa-weibo"></i></a><a class="social-icon" href="https://b23.tv/ns8PZU8" target="_blank" title="bilibili"><i class="fab fa-bilibili"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">Welcome 本网站引入了服务协议，请在网站“关于页”查看（快捷栏）</div><timing></timing></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/blog/%E4%BB%8A%E6%97%A5%E8%AF%9D%E9%A2%98/" title="今日话题：尊重同性恋群体"><img src="https://wx2.sinaimg.cn/orj360/008otbbZgy1hk1rr2vcuwj30u0140afj.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="今日话题：尊重同性恋群体"/></a><div class="content"><a class="title" href="/blog/%E4%BB%8A%E6%97%A5%E8%AF%9D%E9%A2%98/" title="今日话题：尊重同性恋群体">今日话题：尊重同性恋群体</a><time datetime="2023-11-20T16:29:54.000Z" title="发表于 2023-11-21 00:29:54">2023-11-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/%E4%B8%80%E5%8A%A0Ace%202%20Pro%E8%AF%84%E6%B5%8B/" title="一加Ace 2 Pro评测"><img src="https://www.oneplus.com/content/dam/oasis/page/2023/global/events/google/11-card-pc.jpg.thumb.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一加Ace 2 Pro评测"/></a><div class="content"><a class="title" href="/blog/%E4%B8%80%E5%8A%A0Ace%202%20Pro%E8%AF%84%E6%B5%8B/" title="一加Ace 2 Pro评测">一加Ace 2 Pro评测</a><time datetime="2023-11-20T13:51:39.000Z" title="发表于 2023-11-20 21:51:39">2023-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/%E4%B8%BAWindows%E7%94%B5%E8%84%91%E9%87%8D%E6%96%B0%E5%AE%89%E8%A3%85%E6%88%96%E6%9B%B4%E6%8D%A2%E7%B3%BB%E7%BB%9F/" title="为Windows电脑重新安装或更换系统"><img src="https://media-cdn.microsoftstore.com.cn/media/category/surface/231115_surfacecp3_lps.jpg?basic=.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="为Windows电脑重新安装或更换系统"/></a><div class="content"><a class="title" href="/blog/%E4%B8%BAWindows%E7%94%B5%E8%84%91%E9%87%8D%E6%96%B0%E5%AE%89%E8%A3%85%E6%88%96%E6%9B%B4%E6%8D%A2%E7%B3%BB%E7%BB%9F/" title="为Windows电脑重新安装或更换系统">为Windows电脑重新安装或更换系统</a><time datetime="2023-11-20T13:51:39.000Z" title="发表于 2023-11-20 21:51:39">2023-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/Ct%E8%B0%83%E5%BA%A6%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" title="安卓手机性能救星（Ct调度）"><img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.RJrJXxtFbNXNawJi4LhO-QHaFj?w=254&amp;h=190&amp;c=7&amp;r=0&amp;o=5&amp;pid=1.7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="安卓手机性能救星（Ct调度）"/></a><div class="content"><a class="title" href="/blog/Ct%E8%B0%83%E5%BA%A6%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" title="安卓手机性能救星（Ct调度）">安卓手机性能救星（Ct调度）</a><time datetime="2023-11-20T02:05:15.000Z" title="发表于 2023-11-20 10:05:15">2023-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/%E6%B5%8B%E8%AF%84/" title="vivo X100 评测"><img src="https://ms.bdimg.com/pacific/0/pic/270417707_1124014918.jpg?x=0&amp;y=0&amp;vh=340.00&amp;vw=510.00&amp;oh=340.00&amp;ow=510.00&amp;w=146&amp;h=91&amp;rs=0" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vivo X100 评测"/></a><div class="content"><a class="title" href="/blog/%E6%B5%8B%E8%AF%84/" title="vivo X100 评测">vivo X100 评测</a><time datetime="2023-11-18T09:51:39.000Z" title="发表于 2023-11-18 17:51:39">2023-11-18</time></div></div></div></div></div></div></main><footer id="footer" style="background: #808080"><div id="footer-wrap"><div class="copyright">&copy;2023 By Cool的机网</div><div class="footer_custom_text">联系我们：v@linshiit.link | 违法和不良信息举报：jubao@linshiit.link</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>if (document.getElementsByClassName('mermaid').length) {
+  if (window.mermaidJsLoad) mermaid.init()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(() => {
+      window.mermaidJsLoad = true
+      mermaid.initialize({
+        theme: 'default',
+      })
+      true && mermaid.init()
+    })
+  }
+}</script></div><div class="aplayer no-destroy" data-id="38592976" data-server="netease" data-type="song" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div><script src="/js/timing.js"></script><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="true"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="cool的机网,welcome,You’re cool,爱你,感谢支持,欢迎入驻" data-fontsize="35px" data-random="false" async="async"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.removeEventListener('scroll', window.tocScrollFn)
+  window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script></div></body></html>
