@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>手机密码忘了怎么解锁不清除数据</title>
+      <link href="blog/%E6%89%8B%E6%9C%BA%E5%AF%86%E7%A0%81%E5%BF%98%E4%BA%86%E6%80%8E%E4%B9%88%E8%A7%A3%E9%94%81%E4%B8%8D%E6%B8%85%E9%99%A4%E6%95%B0%E6%8D%AE/"/>
+      <url>blog/%E6%89%8B%E6%9C%BA%E5%AF%86%E7%A0%81%E5%BF%98%E4%BA%86%E6%80%8E%E4%B9%88%E8%A7%A3%E9%94%81%E4%B8%8D%E6%B8%85%E9%99%A4%E6%95%B0%E6%8D%AE/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>脑子不好使，记不住新设的手机密码，这样的情况在老年人当中是最常见的。很多人就会想着送去维修店刷机，或者进入recovery模式清除手机所有的数据，但这样的做法就会让你的重要数据都全数丢失！</p><p>以上常用的方法都会让你“损失惨重”，切不可这样做呢~</p><p>那么针对以上的问题，小编跟大家分享一个实用的方法，通过cmd命令就可清除密码，操作步骤如下：</p><p>第一步：用数据线将手机连接到电脑上。</p><p>第二步：在电脑中打开浏览器，搜索【adb驱动】，下载该驱动。</p><p>第三步：下载完成后将压缩包剪切到电脑的C盘中，并将其解压。</p><p>第四步：解压后，我们会看到一个名为【安卓adb驱动】的文件夹，到这里我们已经做好了第一阶段的工作了。</p><p>第五步：回到桌面，同时按下【win+r】组合快捷键，在运行框内输入【cmd】后回车。</p><p>第六步：进入到命令提示符窗口，输入命令【adb】后回车，这样的做法是为了将电脑和手机连接起来。</p><p>第七步：接着输入【adb+空格+shell】，回车，假若看到如下图所示的符号，即代表连接成功了。</p><p>第八步：继续下一步，输入命令【rm+空格+password.key】，回车，假若看到#号即代表删除密码成功。</p><p>第九步：最后，输入手机重启的命令【reboot】，回车，等待手机重启即可进入到手机系统啦！</p><p>这一操作原理就是：通过安卓adb驱动将电脑和手机连接为一体，在电脑中通过命令将手机底层的密码文件删除。</p><p>如果你正有这忘记密码的困扰，不妨试试以上这一方法哦~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 玩机技巧 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 玩机技巧 Android </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>11右键默认“显示更多”！</title>
       <link href="blog/11%E5%8F%B3%E9%94%AE%E9%BB%98%E8%AE%A4%E2%80%9C%E6%98%BE%E7%A4%BA%E6%9B%B4%E5%A4%9A%E2%80%9D%EF%BC%81/"/>
       <url>blog/11%E5%8F%B3%E9%94%AE%E9%BB%98%E8%AE%A4%E2%80%9C%E6%98%BE%E7%A4%BA%E6%9B%B4%E5%A4%9A%E2%80%9D%EF%BC%81/</url>
